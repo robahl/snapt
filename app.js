@@ -28,6 +28,7 @@ app.use(stylus.middleware({
     .set('filename', path)
     .use(require('jeet')())
     .use(require('rupture')())
+    .use(require('autoprefixer-stylus')())
     .import('jeet')
   }
 }));
