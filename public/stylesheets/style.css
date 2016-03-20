@@ -15,6 +15,11 @@ body {
   padding: 0;
   background: #fa5f5f;
 }
+@media only screen and (max-width: 460px) {
+  body {
+    font-size: 13px;
+  }
+}
 div#main-container {
   *zoom: 1;
   width: auto;
@@ -82,7 +87,7 @@ div.middle-pane h2 {
 }
 div.middle-pane input#url-input {
   font-size: 1.7em;
-  padding: 8px;
+  padding: 0.5em;
   background: #fbf5d7;
   border: solid 1px #4e4e4e;
   width: 80%;

@@ -1,3 +1,4 @@
+rupture.mobile-cutoff = 460px
 $bg-color = #fa5f5f
 $spinner-color = rgba(2, 199, 242, 0.8)
 
@@ -12,12 +13,16 @@ html, body
 
 body
   font: 16px 'Dosis', sans
+  +mobile()
+    font-size: 13px
   margin: 0
   padding: 0
   background: $bg-color
 
 div#main-container
   center(960px)
+  // +mobile()
+  //   center(400px)
   height: 100%
   position: relative
   animation: scale-up 0.4s ease-out
@@ -62,7 +67,7 @@ div.middle-pane
     color: #545353
   input#url-input
     font-size: 1.7em
-    padding: 8px
+    padding: 0.5em
     background: #fbf5d7
     border: solid 1px #4e4e4e
     width: 80%
