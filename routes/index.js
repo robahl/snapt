@@ -17,7 +17,6 @@ router.post('/', function(req, res, next) {
 
     webshot(url, imageName, function(err) {
       if (err) {
-        console.log('webshot_err: ' + err);
         return res.json({success: false, error: err})
       }
 
@@ -25,7 +24,6 @@ router.post('/', function(req, res, next) {
       var base64Image = new Buffer(fs.readFileSync(imagePath)).toString('base64');
       fs.unlink(imagePath);
 
-      console.log('Screenshot saved');
       res.json({success: true, image: base64Image})
     });
 
