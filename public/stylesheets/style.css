@@ -156,20 +156,6 @@ div.middle-pane input#url-input:focus {
     height: 5em;
   }
 }
-.example {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background: -webkit-linear-gradient(top, #fff, #000);
-  background: linear-gradient(to bottom, #fff, #000);
-}
 @-webkit-keyframes scale-up {
   0% {
     -webkit-transform: scale(0);
