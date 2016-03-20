@@ -19,8 +19,13 @@ $(document).ready(function() {
     }
   });
 
-  $('body').on('click', function() {
-    $('.image-modal').fadeOut('fast');
+  $('body').on('click keydown', function(event) {
+    if (event.keyCode && event.keyCode !== 27) return;
+
+    if ($('.image-modal').is(':visible')) {
+      $('.image-modal').fadeOut('fast');
+      $urlInput.focus();
+    }
   });
 
 
