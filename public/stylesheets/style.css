@@ -95,7 +95,7 @@ div.middle-pane input#url-input:focus {
 }
 .dangle {
   animation: dangle 4s ease-in-out;
-  transform-origin: 6em 0;
+  transform-origin: 42%;
 }
 .loader,
 .loader:before,
