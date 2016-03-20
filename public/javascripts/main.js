@@ -43,7 +43,7 @@ $(document).ready(function() {
       },
       error: function(jqXHR, error) {
         console.error(error);
-        $urlInput.focus();
+        $urlInput.val('Error: No connection');
       },
       complete: function() {
         $('.overlay').fadeOut('fast');
