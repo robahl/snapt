@@ -22,9 +22,9 @@ router.post('/', function(req, res, next) {
 
       var imagePath = path.join(__dirname, '..', imageName);
       var base64Image = new Buffer(fs.readFileSync(imagePath)).toString('base64');
-      fs.unlink(imagePath);
 
       res.json({success: true, image: base64Image})
+      fs.unlink(imagePath);
     });
 
   } else {
